@@ -1,0 +1,13 @@
+        A Minimalist Ruby THD / THD+N / SINAD Implimentation
+        ----------------------------------------------------
+
+
+Overview:   Simple library for performing THD, THD+N and SINAD
+            measurements on single-dimensional data.
+
+Method:     Taking advantage of open classes to add some interesting
+            new functionality to Array.  Allows for one-liner 
+            measurements on array data.
+            
+Example:    See the example.rb file.
+
