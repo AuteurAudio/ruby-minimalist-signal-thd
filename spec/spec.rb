@@ -3,7 +3,7 @@
 # Distributed under the terms of the MIT License
 
 require 'test/unit'
-require '../lib/sig_proc.rb'
+require '../src/sig_proc.rb'
 
 class TestSigProc < Test::Unit::TestCase
 
