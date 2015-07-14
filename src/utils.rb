@@ -10,19 +10,19 @@ class SigProc < Array
         Math.sqrt(total/size)
     end
 
+    def debias
+        x = self.class.new(self)
+        mean = x.average 
+        x.map { |i| i-mean }
+        x
+    end
+    
     def average 
         total = 0.0
         each { |x| total += x }
         total/size
     end
 
-    def debias
-        x = self.class.new(self)
-        mean = x.average 
-        x.map { |i| i-mean }
-    x
-    end
-    
     def max
         each_with_index.max[1]
     end

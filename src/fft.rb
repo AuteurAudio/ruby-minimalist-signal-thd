@@ -5,8 +5,8 @@
 class SigProc < Array
 
     def fft(win)
-    float_pad
-    window win   
+        float_pad
+        window win   
         f = (fft_rec self).map { |i| i.magnitude.real }
                           .slice(0,(size/2))
                           .map { |i| i/Math.sqrt(size) }
@@ -27,5 +27,7 @@ class SigProc < Array
     def w(i,n)
         Math::E**Complex(0,2*Math::PI*i/n)
     end
+
+    private :fft_rec, :w
 
 end

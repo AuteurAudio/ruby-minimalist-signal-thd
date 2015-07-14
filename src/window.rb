@@ -21,4 +21,6 @@ class SigProc < Array
         return each.with_index { |v,i| r << v*method(fn).call(i,size) }
     end
 
+    private :hanning, :hamming, :blackman
+
 end
